@@ -6,7 +6,14 @@ The application allows you to browse through a list of wines, as well as add, up
 
 This application is further documented [here](http://coenraets.org/blog).
 
-The application is also hosted online. You can test it [here](http://nodecellar.coenraets.org).
+The application is also hosted online. You can test it [here](http://nodecellar.coenraets.org).  
+
+## Forked by Henri Sack 
+To show price and [Cards-Store](http://www.cards-store.net) related QR code
+
+#### Libraries
+* <http://jeromeetienne.github.com/jquery-qrcode/>
+* <http://d-project.googlecode.com/svn/trunk/misc/qrcode/index.html>
 
 
 ## To run the application on your own Heroku account:##

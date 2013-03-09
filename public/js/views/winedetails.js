@@ -6,16 +6,24 @@ window.WineView = Backbone.View.extend({
 
     render: function () {
         $(this.el).html(this.template(this.model.toJSON()));
+		var qrc = $(this.el).find('#qrcodeCanvas')[0];
+		$(qrc).qrcode({
+			text	: "cs://ncl/"+this.model.id,
+			width	: 96,
+			height	: 96
+		});
+		var priceEl = $(this.el).find('#price')[0];
+		$(priceEl).priceFormat();
         return this;
     },
-
+/*
     events: {
         "change"        : "change",
         "click .save"   : "beforeSave",
         "click .delete" : "deleteWine",
         "drop #picture" : "dropHandler"
     },
-
+*/
     change: function (event) {
         // Remove any existing alert message
         utils.hideAlert();

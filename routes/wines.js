@@ -99,7 +99,8 @@ var populateDB = function() {
         country: "France",
         region: "Southern Rhone",
         description: "The aromas of fruit and spice give one a hint of the light drinkability of this lovely wine, which makes an excellent complement to fish dishes.",
-        picture: "saint_cosme.jpg"
+        picture: "saint_cosme.jpg",
+		price: 24.80
     },
     {
         name: "LAN RIOJA CRIANZA",
@@ -108,7 +109,8 @@ var populateDB = function() {
         country: "Spain",
         region: "Rioja",
         description: "A resurgence of interest in boutique vineyards has opened the door for this excellent foray into the dessert wine market. Light and bouncy, with a hint of black truffle, this wine will not fail to tickle the taste buds.",
-        picture: "lan_rioja.jpg"
+        picture: "lan_rioja.jpg",
+		price: 12.45
     },
     {
         name: "MARGERUM SYBARITE",
@@ -117,7 +119,8 @@ var populateDB = function() {
         country: "USA",
         region: "California Central Cosat",
         description: "The cache of a fine Cabernet in ones wine cellar can now be replaced with a childishly playful wine bubbling over with tempting tastes of black cherry and licorice. This is a taste sure to transport you back in time.",
-        picture: "margerum.jpg"
+        picture: "margerum.jpg",
+		price: 8.99
     },
     {
         name: "OWEN ROE \"EX UMBRIS\"",
@@ -126,7 +129,8 @@ var populateDB = function() {
         country: "USA",
         region: "Washington",
         description: "A one-two punch of black pepper and jalapeno will send your senses reeling, as the orange essence snaps you back to reality. Don't miss this award-winning taste sensation.",
-        picture: "ex_umbris.jpg"
+        picture: "ex_umbris.jpg",
+		price: 24.99
     },
     {
         name: "REX HILL",
@@ -135,7 +139,8 @@ var populateDB = function() {
         country: "USA",
         region: "Oregon",
         description: "One cannot doubt that this will be the wine served at the Hollywood award shows, because it has undeniable star power. Be the first to catch the debut that everyone will be talking about tomorrow.",
-        picture: "rex_hill.jpg"
+        picture: "rex_hill.jpg",
+		price: 16.80
     },
     {
         name: "VITICCIO CLASSICO RISERVA",
@@ -144,7 +149,8 @@ var populateDB = function() {
         country: "Italy",
         region: "Tuscany",
         description: "Though soft and rounded in texture, the body of this wine is full and rich and oh-so-appealing. This delivery is even more impressive when one takes note of the tender tannins that leave the taste buds wholly satisfied.",
-        picture: "viticcio.jpg"
+        picture: "viticcio.jpg",
+		price: 18.00
     },
     {
         name: "CHATEAU LE DOYENNE",
@@ -153,7 +159,8 @@ var populateDB = function() {
         country: "France",
         region: "Bordeaux",
         description: "Though dense and chewy, this wine does not overpower with its finely balanced depth and structure. It is a truly luxurious experience for the senses.",
-        picture: "le_doyenne.jpg"
+        picture: "le_doyenne.jpg",
+		price: 102.95
     },
     {
         name: "DOMAINE DU BOUSCAT",
@@ -162,7 +169,8 @@ var populateDB = function() {
         country: "France",
         region: "Bordeaux",
         description: "The light golden color of this wine belies the bright flavor it holds. A true summer wine, it begs for a picnic lunch in a sun-soaked vineyard.",
-        picture: "bouscat.jpg"
+        picture: "bouscat.jpg",
+		price: 12.55
     },
     {
         name: "BLOCK NINE",
@@ -171,7 +179,8 @@ var populateDB = function() {
         country: "USA",
         region: "California",
         description: "With hints of ginger and spice, this wine makes an excellent complement to light appetizer and dessert fare for a holiday gathering.",
-        picture: "block_nine.jpg"
+        picture: "block_nine.jpg",
+		price: 5.80
     },
     {
         name: "DOMAINE SERENE",
@@ -180,7 +189,8 @@ var populateDB = function() {
         country: "USA",
         region: "Oregon",
         description: "Though subtle in its complexities, this wine is sure to please a wide range of enthusiasts. Notes of pomegranate will delight as the nutty finish completes the picture of a fine sipping experience.",
-        picture: "domaine_serene.jpg"
+        picture: "domaine_serene.jpg",
+		price: 11.20
     },
     {
         name: "BODEGA LURTON",
@@ -189,7 +199,8 @@ var populateDB = function() {
         country: "Argentina",
         region: "Mendoza",
         description: "Solid notes of black currant blended with a light citrus make this wine an easy pour for varied palates.",
-        picture: "bodega_lurton.jpg"
+        picture: "bodega_lurton.jpg",
+		price: 8.00
     },
     {
         name: "LES MORIZOTTES",
@@ -198,7 +209,8 @@ var populateDB = function() {
         country: "France",
         region: "Burgundy",
         description: "Breaking the mold of the classics, this offering will surprise and undoubtedly get tongues wagging with the hints of coffee and tobacco in perfect alignment with more traditional notes. Sure to please the late-night crowd with the slight jolt of adrenaline it brings.",
-        picture: "morizottes.jpg"
+        picture: "morizottes.jpg",
+		price: 17.80
     },
     {
         name: "ARGIANO NON CONFUNDITUR",
@@ -207,7 +219,8 @@ var populateDB = function() {
         country: "Italy",
         region: "Tuscany",
         description: "Like a symphony, this cabernet has a wide range of notes that will delight the taste buds and linger in the mind.",
-        picture: "argiano.jpg"
+        picture: "argiano.jpg",
+		price: 33.50
     },
     {
         name: "DINASTIA VIVANCO ",
@@ -216,7 +229,8 @@ var populateDB = function() {
         country: "Spain",
         region: "Rioja",
         description: "Whether enjoying a fine cigar or a nicotine patch, don't pass up a taste of this hearty Rioja, both smooth and robust.",
-        picture: "dinastia.jpg"
+        picture: "dinastia.jpg",
+		price: 55.10
     },
     {
         name: "PETALOS BIERZO",
@@ -225,7 +239,8 @@ var populateDB = function() {
         country: "Spain",
         region: "Castilla y Leon",
         description: "For the first time, a blend of grapes from two different regions have been combined in an outrageous explosion of flavor that cannot be missed.",
-        picture: "petalos.jpg"
+        picture: "petalos.jpg",
+		price: 7.99
     },
     {
         name: "SHAFER RED SHOULDER RANCH",
@@ -234,7 +249,8 @@ var populateDB = function() {
         country: "USA",
         region: "California",
         description: "Keep an eye out for this winery in coming years, as their chardonnays have reached the peak of perfection.",
-        picture: "shafer.jpg"
+        picture: "shafer.jpg",
+		price: 72.35
     },
     {
         name: "PONZI",
@@ -243,7 +259,8 @@ var populateDB = function() {
         country: "USA",
         region: "Oregon",
         description: "For those who appreciate the simpler pleasures in life, this light pinot grigio will blend perfectly with a light meal or as an after dinner drink.",
-        picture: "ponzi.jpg"
+        picture: "ponzi.jpg",
+		price: 41.00
     },
     {
         name: "HUGEL",
@@ -252,7 +269,8 @@ var populateDB = function() {
         country: "France",
         region: "Alsace",
         description: "Fresh as new buds on a spring vine, this dewy offering is the finest of the new generation of pinot grigios.  Enjoy it with a friend and a crown of flowers for the ultimate wine tasting experience.",
-        picture: "hugel.jpg"
+        picture: "hugel.jpg",
+		price: 27.68
     },
     {
         name: "FOUR VINES MAVERICK",
@@ -261,7 +279,8 @@ var populateDB = function() {
         country: "USA",
         region: "California",
         description: "o yourself a favor and have a bottle (or two) of this fine zinfandel on hand for your next romantic outing.  The only thing that can make this fine choice better is the company you share it with.",
-        picture: "fourvines.jpg"
+        picture: "fourvines.jpg",
+		price: 8.10
     },
     {
         name: "QUIVIRA DRY CREEK VALLEY",
@@ -270,7 +289,8 @@ var populateDB = function() {
         country: "USA",
         region: "California",
         description: "Rarely do you find a zinfandel this oakey from the Sonoma region. The vintners have gone to extremes to duplicate the classic flavors that brought high praise in the early '90s.",
-        picture: "quivira.jpg"
+        picture: "quivira.jpg",
+		price: 16.50
     },
     {
         name: "CALERA 35TH ANNIVERSARY",
@@ -279,7 +299,8 @@ var populateDB = function() {
         country: "USA",
         region: "California",
         description: "Fruity and bouncy, with a hint of spice, this pinot noir is an excellent candidate for best newcomer from Napa this year.",
-        picture: "calera.jpg"
+        picture: "calera.jpg",
+		price: 21.00
     },
     {
         name: "CHATEAU CARONNE STE GEMME",
@@ -288,7 +309,8 @@ var populateDB = function() {
         country: "France",
         region: "Bordeaux",
         description: "Find a sommelier with a taste for chocolate and he's guaranteed to have this cabernet on his must-have list.",
-        picture: "caronne.jpg"
+        picture: "caronne.jpg",
+		price: 31.10
     },
     {
         name: "MOMO MARLBOROUGH",
@@ -297,7 +319,8 @@ var populateDB = function() {
         country: "New Zealand",
         region: "South Island",
         description: "Best served chilled with melon or a nice salty prosciutto, this sauvignon blanc is a staple in every Italian kitchen, if not on their wine list.  Request the best, and you just may get it.",
-        picture: "momo.jpg"
+        picture: "momo.jpg",
+		price: 10.70
     },
     {
         name: "WATERBROOK",
@@ -306,7 +329,8 @@ var populateDB = function() {
         country: "USA",
         region: "Washington",
         description: "Legend has it the gods didn't share their ambrosia with mere mortals.  This merlot may be the closest we've ever come to a taste of heaven.",
-        picture: "waterbrook.jpg"
+        picture: "waterbrook.jpg",
+		price: 7.70
     }];
 
     db.collection('wines', function(err, collection) {
