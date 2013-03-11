@@ -1,12 +1,29 @@
-var mongo = require('mongodb');
+var mongo = require('mongodb'); 
 
 var Server = mongo.Server,
+	MongoClient = mongo.MongoClient,
     Db = mongo.Db,
+	db,
     BSON = mongo.BSONPure;
 
-var server = new Server('localhost', 27017, {auto_reconnect: true});
-db = new Db('winedb', server, {safe: true});
+var MONGOLAB_URI= process.env.MONGOLAB_URI || "mongodb://localhost:27017/winedb";
 
+//var server = new Server('localhost', 27017, {auto_reconnect: true});
+//db = new Db('winedb', server, {safe: true});
+
+MongoClient.connect(MONGOLAB_URI, function(err, _db) {
+  if(err) { return console.dir(err); }
+	db=_db;
+  console.log("Connected to 'winedb' database");
+  db.collection('wines', {safe:true}, function(err, collection) {
+      if (err) {
+          console.log("The 'wines' collection doesn't exist. Creating it with sample data...");
+          populateDB();
+      }
+  });
+});
+
+/*
 db.open(function(err, db) {
     if(!err) {
         console.log("Connected to 'winedb' database");
@@ -18,7 +35,7 @@ db.open(function(err, db) {
         });
     }
 });
-
+*/
 exports.findById = function(req, res) {
     var id = req.params.id;
     console.log('Retrieving wine: ' + id);
