@@ -4,20 +4,38 @@ var Server = mongo.Server,
 	MongoClient = mongo.MongoClient,
     Db = mongo.Db,
 	db,
+	format = require('util').format,
     BSON = mongo.BSONPure;
 
 var MONGOLAB_URI= process.env.MONGOLAB_URI || "mongodb://localhost:27017/winedb";
+console.log("database URI = %s", MONGOLAB_URI);
+
+/*
+MongoClient.connect(MONGOLAB_URI, function(err, _db) {
+  if(err) { return console.dir(err); }
+	db=_db;
+  	console.log("Connected to 'winedb' database");
+  	db.collection('wines', {safe:true}, function(err, collection) {
+		if (err) {
+			console.log("The 'wines' collection doesn't exist. Creating it with sample data...");
+			populateDB();
+		}
+	});
+});
+*/
 
 MongoClient.connect(MONGOLAB_URI, function(err, _db) {
   if(err) { return console.dir(err); }
 	db=_db;
-  console.log("Connected to 'winedb' database");
-  db.collection('wines', {safe:true}, function(err, collection) {
-      if (err) {
-          console.log("The 'wines' collection doesn't exist. Creating it with sample data...");
-          populateDB();
-      }
-  });
+  	console.log("Connected to 'winedb' database");
+	var found = false;
+	db.collectionNames('wines',{namesOnly:true}, function(err, colls){
+//		console.log("collections = ", colls);
+		if(colls.length == 0){
+			console.log("The 'wines' collection doesn't exist. Creating it with sample data...");
+			populateDB();
+		}
+	}) 
 });
 
 exports.findById = function(req, res) {
