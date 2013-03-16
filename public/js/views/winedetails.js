@@ -8,7 +8,7 @@ window.WineView = Backbone.View.extend({
         $(this.el).html(this.template(this.model.toJSON()));
 		var qrc = $(this.el).find('#qrcodeCanvas')[0];
 		$(qrc).qrcode({
-			text	: "cs://ncl/"+this.model.id,
+			text	: "cs://NCW/"+this.model.id,
 			width	: 96,
 			height	: 96
 		});
